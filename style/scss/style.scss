@@ -1,0 +1,251 @@
+
+
+*{
+    text-decoration: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{ /*Copiado directamente de la página de Mercado Libre*/
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif; /*Menos el font */
+    font-size: 14px;
+}
+
+header{
+    background-color: #fff159;
+}
+
+main{ /*Copiado directamente de la página de Mercado Libre*/
+    background-color: #ebebeb;
+}
+
+footer{
+    
+    height: 300px;
+    background: rgb(235,235,235);
+    background: linear-gradient(180deg, rgba(235,235,235,1) 50%, rgba(255,255,255,1) 90%);  
+
+    .footer_p--padding{
+        padding-top: 200px;
+    }
+}
+
+
+/* Variables... */ /* las variables me crashean el npm */
+
+/* copiado de Mercado Libre */
+
+/* Variables.*/
+
+
+/*Media Queries*/
+
+@media (max-width: 576px) { 
+    
+    
+
+}
+
+@media (min-width: 576px) { 
+
+    
+
+}
+
+@media (min-width:1100px){
+
+    /*Clases...*/
+
+
+    /*INDEX...*/
+
+         /*Header...*/
+
+                .header{
+                    display: flex;
+                    height: 65px; 
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+
+                .header_logo{
+
+                    height: 65px;
+                    width: 185px;
+                    margin-right: 65px
+                }
+
+         /*Header.*/
+
+        
+         /*main...*/
+
+         .main--grid{
+             display: grid;
+             grid-column-gap: 25px;
+             grid-template-columns: 1fr 3fr;
+             grid-template-rows: 50% 50%;
+             grid-template-areas: "aside articles articles"
+                                  "aside articles articles";
+         }
+
+         .main_aside--grid-item{
+             grid-area: aside;
+
+             display: flex;
+             flex-direction: column;
+             justify-content: space-evenly;
+             gap: 20px;
+
+             margin-top: 35px;
+             margin-left: 10px;
+             margin-bottom: 25px;
+
+             h2{
+                 margin-left: 5px;
+             }
+         }
+
+         .main_div--grid-item{
+             grid-area: articles;
+
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             justify-content: space-evenly;
+             align-content: space-evenly;
+             text-align: center;
+             gap: 30px;
+
+             margin-right: 10px;
+
+
+         }
+
+        /* main.*/
+
+     /*INDEX.*/
+
+     /*LOGIN...*/
+
+     .login_main{
+         display: flex;
+         justify-content: center;
+         align-content: center;
+         background: rgb(235,235,235);
+        background: linear-gradient(0deg, rgba(235,235,235,1) 23%, rgba(255,241,89,1) 60%);
+     }
+
+     .div--login{
+         background-color:white ;
+         width: 50%;
+         height: 50%;
+         margin-top: 35px;
+
+         display: flex;
+         flex-direction: column;
+
+         .div_a--logo{
+             margin-top: 10px;
+             text-align: center;
+             font-size: 25px;
+         }
+
+     }
+     .div_form--padding{
+         padding: 30px;
+     }
+     
+     /*LOGIN.*/
+
+     /*PRODUCTOS...*/
+
+     .producto_div--flex{
+         display: flex;
+         flex-direction: row;
+         gap:10px;
+     }
+
+     .div_img{
+            
+            height: 738px;
+            width: 70%;
+            margin-top: 30px;
+            margin: 20px;
+
+            img{
+                height: 738px;
+            }
+     }
+
+     .div_card{
+            margin: 20px;
+     }
+
+     /*PRODUCTOS.*/
+         
+
+    /*Clases.*/
+
+    
+   
+
+}
+
+/*Media queries.*/
+
+/*Animaciones...*/ /*Copiado de otro trabajo mío, ya que no me andaba el :hover, era porque no puse la clase atras suyo*/
+/*hovers...*/
+
+
+.hover-borders {
+    animation-duration: 3s; }
+    .hover-borders :hover {
+      border-color: #fff159;
+      border-width: 2px;
+       }
+  
+  /*hovers.*/
+  /*keyframes...*/
+  .keyframes-aparecer-3s {
+    animation-duration: 3s;
+    animation-name: aparecer-3s; }
+  
+  @keyframes aparecer-3s {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  
+  .keyframes-aparecer-2s {
+    animation-duration: 2s;
+    animation-name: aparecer; }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0; }
+    50% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+
+    .keyframes-aparecer-1s{
+
+        animation-duration: 1s;
+        animation-name: aparecer-1s;
+
+        @keyframes aparecer-1s {
+            0% {
+              opacity: 0; }
+            50% {
+              opacity: 0; }
+            100% {
+              opacity: 1; } }
+
+    }
+  
+  /*keyframes.*/
+  /*animaciones.*/
